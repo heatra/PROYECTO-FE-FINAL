@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    
+    padding:10px;
+    text-align: center;
+    width: 100% ;
+    height:auto;
+    font-family:"Tangerine", arial, helvetica;
+    background-color: rgba(251, 251, 253, 0.5);
+    color: blue; 
+  
+    background-image: url('../imagenes/fichas.png');
+  
+    background-repeat:repeat;
+    background-position: center center;
+    background-size:auto; 
+    background-attachment:initial;
+
+}
+
+#app{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1,h2{
+    background-color: rgba(120, 141, 141, 0.7);
+    margin:10px 0;
+}
+
+.productos,
+.carrito{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+.card{
+    background:rgba(184, 182, 196,0.8);
+    border-radius:10px;
+    padding:15px;
+    width:250px;
+    box-shadow:0 0 10px rgba(64, 81, 132, 0.15);
+}
+
+.card img{
+    width:50%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:5px 0;
+}
+
+.card p{
+    margin:2px 0;
+}
+
+button{
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin:2px;
+}
+
+.agregar{
+    background:#323bc2;
+    color:white;
+}
+
+.mas{
+    background:#007bff;
+    color:white;
+}
+
+.menos{
+    background:#229686;
+    color:white;
+}
+
+.eliminar{
+    background:#841996;
+    color:white;
+}
+
+.vaciar{
+    background:black;
+    color:white;
+    margin-top:20px;
+}
+
+.total{
+    margin-top:20px;
+    font-size:15px;
+    font-weight:bold;
+    background-color: #229686;
+}
+
+/* MENU */
+
+.menu{
+    
+        border: 1vw solid #6b93c0;
+        padding:0.1vw;
+        font-family:"Tangerine", arial, helvetica;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 2vw;
+        color: blue;
+        background-color:rgba(111, 113, 134, 0.2);
+}
+
+
+.menu ul{
+      display: flex;
+      list-style: none;
+      
+      margin:0;
+      padding:0;
+      justify-content: center;
+      gap:0.1vw;
+
+}
+
+.menu a{
+    color: rgb(7, 32, 215);
+    margin-right: 15px;
+    text-decoration: none;
+    font-family:"Tangerine", arial, helvetica;
+    
+}
+
+.menu a:hover{
+    color: rgb(196, 15, 15);
+}
+
+
+/****** Archivo contacto.html  ******/
+
+ .datos-contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        margin-left: 10%;
+        padding: 5%;    
+    }
+
+.datos-p{
+        display: flex;
+        background-color: rgba(20, 23, 223, 0.3);
+        transition:background-color 0.5s ease; 
+        padding: 8%;
+        border: 15px solid rgba(64, 25, 125, 0.5);
+        font-family: "Arial", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size:medium;
+
+    }
+
+    .Caption-form{
+            display: flex;
+            gap: 20px;
+    }
+
+/****** Archivo formulario.html  ******/
+
+
+.estilo-forma{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        font-size:2vw;      
+        background-color: rgb(143, 204, 204);
+}
+
+.estilo-input{
+        font-size:2vw;
+        background-color: rgb(207, 239, 239);
+        color:rgb(57, 3, 194);
+
+}
+
+.form-horizontal{
+      display: flex;  
+      gap: 40px;
+      align-items: center;
+    
+}
+
+
+
+/* ----- PAGINA productos.html ----- */
+
+
+.producto-ul {
+      display:flex;
+      flex-direction:column;
+      width: 100%;
+      font-weight: bolder;
+      background-color:rgba(162, 182, 225, 0.3);      
+}
+
+li {
+     display: flex; 
+     text-align: center;
+     align-items: center; 
+     font-size: 2vw;
+     font-weight: bolder;
+     justify-content: center;
+     align-items: center;
+     height: 50px;
+
+}
+
+
+/****** Archivo servicios.html  ******/
+
+
+table{
+        width: 100%;
+        height: auto;
+        font-size: large;
+        border-spacing:50%;
+        margin-right: auto;
+}
+
+th {
+  background-color:rgba(177, 202, 233,0.8);
+
+}
+thead {
+  background-color:rgba(177, 202, 223,0.8);
+  text-align: center;
+  font-weight: bold;
+
+}
+
+tbody{
+        background-color: rgba(89, 89, 223, 0.8);
+        color:white;
+
+}
+
+.servicios{
+        font-size: large;
+        font-weight: bold;
+
+}
+
+
+/* ----- PAGINA Reseñas.html formato GRID ------- */
+
+
+body {
+  font-family: "Tangerine", sans-serif;
+  font-size: 14px;  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      'header'
+      'menu'
+      'cables'
+      'fichas'
+      'termomagneticas'
+      'diferenciales'
+      'soportecables'
+      'lamp'
+      'footer2';
+  background-color: white;
+  gap: 10px;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgba(141, 192, 228,0.6);
+  font-weight: bolder;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header > h1 {
+  font-size: 50px;
+}
+
+.menu-reseña {
+  grid-area: menu;
+  grid-auto-rows: auto;
+  justify-self: center;
+  background-color: blue; 
+  border-radius: 5%; 
+  width: 40%;
+  height: fit-content;
+ 
+}
+
+.menu-reseña ul {
+  list-style-type:none;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.5vw;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-reseña li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: white;
+  color: blue;
+}
+
+.menu-reseña li:hover {
+  background-color: #0099cc;
+}
+
+.cables {
+  grid-area: cables;
+  background-color: rgba(29, 29, 229, 0.3);
+}
+
+.cables > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.cables > p {
+  margin-bottom: 7px;
+  font-family: "Arial", Helvetica, sans-serif;
+  text-align: left;
+}
+
+.fichas {
+  grid-area: fichas;
+  background-color: rgba(153, 32, 193, 0.3);
+}
+
+.fichas > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.fichas > p {
+  margin-bottom: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.termag {
+  grid-area: termomagneticas;
+  background-color: rgba(27, 129, 193, 0.3);
+}
+
+.termag > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.termag > p {
+  margin-bottom: 7px;
+  font-family: "Arial", Helvetica, sans-serif;
+  text-align: left;
+}
+
+.diferen {
+  grid-area: diferenciales; 
+  background-color:rgba(87, 87, 93, 0.3);
+}
+
+.diferen > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.diferen > p {
+  margin-bottom: 7px;
+  font-family: "Arial", Helvetica, sans-serif;
+  text-align: left;
+}
+
+.soportecables {
+  grid-area:auto;
+  background-color: rgba(27, 129, 193, 0.3);
+}
+
+.soportecables > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.soportecables > p {
+  margin-bottom: 7px;
+  font-family: "Arial", Helvetica, sans-serif;
+  text-align: left;
+}
+
+
+.lamp {
+  grid-area:auto;
+  background-color: rgba(160, 27, 193, 0.3);
+}
+
+.lamp > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.lamp > p {
+  margin-bottom: 7px;
+  font-family: "Arial", Helvetica, sans-serif;
+  text-align: left;
+}
+
+.al-menu{
+  font-family: "arial", sans-serif;
+  font-size:small;
+}

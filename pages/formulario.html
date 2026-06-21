@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+ 
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <br>
+
+    <div id="menu"></div>
+
+    <form class="estilo-forma"
+        action="https://formspree.io/f/xdapejaq" method="POST">
+      
+>     <div class="form-horizontal">
+        <label for="nombre"><h2>Nombre:</h2></label>
+        <input type="text" class="estilo-input" id="nombre" name="nombre">
+      </div>
+
+      <div class="form-horizontal">
+        <label for="email"><h2>Email:   </h2></label>
+        <input type="text" class="estilo-input" id="email" name="email">
+      </div>
+
+      <div class="form-horizontal">                  
+        <label for="mensaje"><h2>Mensaje:</h2></label>
+              <textarea class="estilo-input" name="mensaje" rows="5" cols="30" placeholder="Su mensaje"></textarea>
+      </div>  
+        
+        <br>
+
+        <button type="submit">Send</button>
+        <button type="reset">Cancelar</button>
+        
+        <br><br>
+    
+
+    </form> 
+
+    <script src="/js/menu.js"></script>
+
+</body>
+
+</html>

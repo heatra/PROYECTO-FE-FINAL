@@ -1,0 +1,27 @@
+
+[
+    {
+        "id": 1,
+        "nombre": "Cables",
+        "precio": 2500,
+        "imagen": "/imagenes/cables.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Fichas",
+        "precio": 8000,
+        "imagen": "/imagenes/fichas.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Termomagnéticas",
+        "precio": 15000,
+        "imagen": "/imagenes/termomagnetica.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Diferenciales",
+        "precio": 37000,
+        "imagen": "/imagenes/termicas-diferenciales.png"
+    }
+]
