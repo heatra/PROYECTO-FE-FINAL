@@ -263,7 +263,6 @@ tbody{
 
 /* ----- PAGINA Reseñas.html formato GRID ------- */
 
-
 body {
   font-family: "Tangerine", sans-serif;
   font-size: 14px;  
@@ -281,8 +280,8 @@ body {
       'soportecables'
       'lamp'
       'footer2';
-  background-color: white;
-  gap: 10px;
+  background-color: rgba(116, 125, 147,0.5);
+  gap: 5px;
 }
 
 .header {
@@ -294,21 +293,21 @@ body {
 }
 
 .header > h1 {
-  font-size: 50px;
+  font-size: 25px;
 }
 
-.menu-reseña {
+.menu-resena {
   grid-area: menu;
   grid-auto-rows: auto;
   justify-self: center;
   background-color: blue; 
   border-radius: 5%; 
-  width: 40%;
+  width: 50%;
   height: fit-content;
  
 }
 
-.menu-reseña ul {
+.menu-resena ul {
   list-style-type:none;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -318,14 +317,14 @@ body {
   padding: 0;
 }
 
-.menu-reseña li {
+.menu-resena li {
   padding: 8px;
   margin-bottom: 7px;
   background-color: white;
   color: blue;
 }
 
-.menu-reseña li:hover {
+.menu-resena li:hover {
   background-color: #0099cc;
 }
 
@@ -430,3 +429,134 @@ body {
   font-family: "arial", sans-serif;
   font-size:small;
 }
+
+
+/* MEDIA QUERIES PARA archivo contacto.html   */
+    
+@media screen and (00px<=width<=500px) {
+
+    body{
+        background-color: rgba(40, 132, 75, 0.3);
+    }
+
+    .retorno-index-contacto {
+        display: flex;
+        flex-wrap: wrap ;
+        border: 1vw solid rgba(14, 63, 123, 0.5);
+        border-radius: 8px;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 4vw;
+        font-weight: bold;
+        word-spacing: 15px;
+        background-color: rgba(62, 188, 83, 0.3);
+        padding:0.1vw;
+        cursor:auto;
+        }
+
+    .datos-contacto {
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+        padding: 5%;
+        }
+
+    .datos-p{
+        display: grid;
+        background-color: rgba(20, 23, 223, 0.3);
+        transition: background-color 0.5s ease; 
+        padding: 8%;
+        border: 15px solid rgba(64, 25, 125, 0.5);
+        font-family: "Arial", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: medium;
+        }
+        
+    } 
+
+@media (500px<width<=800px) {
+    
+    body{
+        background-color: rgba(50, 23, 228, 0.3);
+    }
+    .retorno-index-contacto {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1vw solid rgba(14, 63, 123, 0.5);
+        border-radius: 8px;
+        max-width: 100%;
+        font-size:3vw;
+        justify-content:space-between;
+        text-align: center;
+        font-weight: bold;
+        word-spacing: 15px;
+        background-color: rgba(16, 78, 154, 0.3);
+        padding: 0.1vw;
+        cursor:auto;
+        }
+
+    .datos-contacto {
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+        padding: 5%;
+        }
+    
+    .datos-p{
+        display: flex;
+        background-color: rgba(14, 17, 180, 0.2);
+        transition: background-color 0.5s ease; 
+        padding: 8%;
+        border: 15px solid rgba(64, 25, 125, 0.5);
+        font-family: "Arial", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size:medium;
+        }
+        
+    }
+
+@media (800px<width<=1200px) {
+
+    body{
+        background-color: rgba(15, 244, 244, 0.3);
+    }
+    .retorno-index-contacto {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1vw solid rgba(14, 63, 123, 0.5);
+        border-radius: 8px;
+        max-width: 100%;
+        font-size: 3vw;
+        justify-content:space-between;
+        text-align: center;
+        font-weight: bold;
+        word-spacing: 15px;
+        background-color: rgba(15, 200, 228, 0.3);
+        padding: 1%;
+        border: 15px solid rgba(64, 25, 125, 0.5);
+        cursor:auto;
+        }
+
+    .datos-contacto {
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+        padding: 5%;
+        }
+
+    .datos-p{
+        display: flex;
+        background-color: rgba(20, 223, 220, 0.482);
+        padding: 8%;
+        border: 15px solid rgba(137, 107, 186, 0.5);
+        font-family: "Arial", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size:medium;
+        }         
+    }
+
+
+
+
+
